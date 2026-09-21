@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News · VAWnet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="news">
+
+<div class="safety-bar">
+  <span class="safety-bar__title">Your safety matters.</span>
+  <span class="safety-bar__note">Press <b>ESC</b> twice, or use the button, to leave this site immediately.</span>
+  <span class="safety-bar__spacer"></span>
+  <a class="safety-bar__btn" href="https://weather.com" data-leave-site>Leave this site <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></a>
+</div>
+<div class="safety-offset"></div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="https://vawnet.org/themes/custom/vawnet/logo.svg" alt="VAWnet">
+      <span class="brand__tag">Resource<br>library</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <button class="main-nav__link" type="button" data-menu-toggle="topics" aria-expanded="false" aria-controls="menu-topics">Content Topics &#9662;</button>
+      <button class="main-nav__link" type="button" data-menu-toggle="types" aria-expanded="false" aria-controls="menu-types">Material Types &#9662;</button>
+      <a class="main-nav__link" href="news.html">News</a>
+      <a class="main-nav__link" href="news.html">Events</a>
+      <a class="main-nav__link" href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      <a class="search-trigger" href="library.html"><svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><span>Search the library</span></a>
+      <a class="main-nav__link" href="#">Log in</a>
+      <a class="btn btn--primary" href="#">Create account</a>
+    </div>
+  </div>
+  <div class="mega" id="menu-topics" data-menu="topics">
+    <div class="container">
+      <div class="mega__grid mega__grid--topics">
+        <div class="mega__col"><a class="mega__title" href="library.html">Engagement &amp; Collaboration</a><div class="mega__count">612 materials</div><div class="mega__links"><a href="library.html">Coalition Building</a><a href="library.html">Community Organizing</a><a href="library.html">Coordinated Community Response</a><a href="library.html">Media Advocacy / Literacy</a><a href="library.html">Movement Building</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Intervention &amp; Prevention</a><div class="mega__count">1,184 materials</div><div class="mega__links"><a href="library.html">Accessibility</a><a href="library.html">Counseling &amp; Crisis Intervention</a><a href="library.html">Prevention Programming</a><a href="library.html">Residential / Shelter Services</a><a href="library.html">Trauma Informed Approach</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Management &amp; Sustainability</a><div class="mega__count">438 materials</div><div class="mega__links"><a href="library.html">Fiscal Management</a><a href="library.html">Fund Development</a><a href="library.html">Funding Opportunities</a><a href="library.html">Leadership Development</a><a href="library.html">Staff Development</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Policy &amp; Systems Advocacy</a><div class="mega__count">903 materials</div><div class="mega__links"><a href="library.html">Child Welfare</a><a href="library.html">Civil Legal Rights</a><a href="library.html">Criminal Justice</a><a href="library.html">Economic Justice</a><a href="library.html">Immigration / Resettlement</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Research &amp; Statistics</a><div class="mega__count">4,056 materials</div><div class="mega__links"><a href="library.html">Communities of Color</a><a href="library.html">Disaster</a><a href="library.html">Housing &amp; Homelessness</a><a href="library.html">Human Trafficking</a><a href="library.html">Mental Health</a></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="mega" id="menu-types" data-menu="types">
+    <div class="container">
+      <div class="mega__grid mega__grid--types">
+        <div class="mega__col"><a class="mega__title" href="library.html">Special Collections</a><p class="mega__desc">Curated sets of our most highly valued resources.</p></div><div class="mega__col"><a class="mega__title" href="library.html">NRCDV Publications</a><p class="mega__desc">Papers, briefs and guides authored in house.</p></div><div class="mega__col"><a class="mega__title" href="library.html">Training Tools</a><p class="mega__desc">Webinars, slide decks and facilitation materials.</p></div><div class="mega__col"><a class="mega__title" href="library.html">General Materials</a><p class="mega__desc">Everything else in the library, from every publisher.</p></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / News</nav>
+
+    <div class="section__head section__head--page">
+      <div>
+        <h1 class="page-title gap-below-sm">News</h1>
+        <p class="lead">Announcements, press releases and the TA Question of the Month from the National Resource Center on Domestic Violence.</p>
+      </div>
+      <div class="filter-chips" role="group" aria-label="Filter news">
+        <button class="filter-chip is-active" type="button" data-news-filter>All</button>
+        <button class="filter-chip" type="button" data-news-filter>Press releases</button>
+        <button class="filter-chip" type="button" data-news-filter>TA Question</button>
+        <button class="filter-chip" type="button" data-news-filter>Newsletters</button>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <a class="news-featured" href="article.html">
+        <img class="news-featured__thumb" src="https://vawnet.org/sites/default/files/styles/news_homepage/public/assets/images/DVAM2026-SocialMedia%20%282%29_0.png?itok=kUu-7m3u" alt="I stand with survivors when action is needed">
+        <div>
+          <p class="news-lead__kicker flush-top">Featured &middot; TA Question of the Month</p>
+          <h2 class="news-featured__title">What are some ways that I can take action this Domestic Violence Awareness Month?</h2>
+          <p class="news-lead__excerpt gap-below-sm">Survivors deserve action. This month's question offers opportunities for taking action around this year's theme, &ldquo;With Survivors, Always.&rdquo;</p>
+          <p class="eyebrow">Wednesday, September 16, 2026</p>
+        </div>
+      </a>
+
+      <div class="news-grid">
+        <a class="news-card" href="article.html">
+          <img class="news-card__thumb" src="https://vawnet.org/sites/default/files/styles/news_homepage/public/assets/images/DVAM2025%20logos%20%28English%29%20%281500%20x%201500%20px%29.png?itok=MLxtMvLe" alt="">
+          <p class="card__kicker">September 11, 2026 &middot; Newsletter</p>
+          <h3 class="news-row__title">Fall 2026 Newsletter</h3>
+        </a><a class="news-card" href="article.html">
+          <img class="news-card__thumb" src="https://vawnet.org/sites/default/files/styles/news_homepage/public/assets/images/Press%20Release_2.png?itok=SZaDZqGU" alt="">
+          <p class="card__kicker">August 4, 2026 &middot; Press release</p>
+          <h3 class="news-row__title">A Survivor's Actions Do Not Disprove Abuse: NRCDV responds to recent remarks</h3>
+        </a><a class="news-card" href="article.html">
+          <img class="news-card__thumb" src="https://vawnet.org/sites/default/files/assets/images/FosterCare-featuredimg.png" alt="">
+          <p class="card__kicker">July 22, 2026 &middot; Announcement</p>
+          <h3 class="news-row__title">New Special Collection: Disaster and Emergency Preparedness</h3>
+        </a><a class="news-card" href="article.html">
+          <img class="news-card__thumb" src="https://vawnet.org/sites/default/files/assets/images/Newsletter-featuredimg_1.png" alt="">
+          <p class="card__kicker">June 30, 2026 &middot; Newsletter</p>
+          <h3 class="news-row__title">Summer 2026 Newsletter</h3>
+        </a><a class="news-card" href="article.html">
+          <img class="news-card__thumb" src="https://vawnet.org/sites/default/files/assets/images/TrainingInstitute-featuredimg_0.png" alt="">
+          <p class="card__kicker">June 12, 2026 &middot; Announcement</p>
+          <h3 class="news-row__title">Registration open for the fall Training Institute series</h3>
+        </a>
+      </div>
+
+      <p class="stack-lg"><button class="btn btn--secondary btn--lg" type="button">Load more news</button></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div>
+      <img class="footer__logo" src="https://vawnet.org/sites/default/files/assets/images/full%20logo_color.png" alt="National Resource Center on Domestic Violence">
+      <p class="footer__about">A project of the National Resource Center on Domestic Violence. 632 N. 2nd Street, Unit #589, Philadelphia, PA 19123-3001. Phone 717-461-3939.</p>
+    </div>
+    <div>
+      <div class="footer__title">Library</div>
+      <div class="footer__links"><a href="library.html">Content Topics</a><a href="library.html">Special Collections</a><a href="library.html">NRCDV Publications</a><a href="library.html">Training Tools</a></div>
+    </div>
+    <div>
+      <div class="footer__title">Organization</div>
+      <div class="footer__links"><a href="news.html">News</a><a href="news.html">Events</a><a href="about.html">About VAWnet</a><a href="about.html">Contact</a></div>
+    </div>
+    <div>
+      <div class="footer__title">Newsletter</div>
+      <p class="footer__note">Training announcements and new resources.</p>
+      <form class="subscribe-form" action="#" method="post">
+        <label class="visually-hidden" for="footer-email">Email address</label>
+        <input class="input" id="footer-email" type="email" placeholder="Email address">
+        <button class="btn btn--primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <div class="container footer__legal-inner">
+      <span>&copy; 2026 National Resource Center on Domestic Violence.</span>
+      <span class="spacer"></span>
+      <a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a><a href="#">Funding Disclaimer</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

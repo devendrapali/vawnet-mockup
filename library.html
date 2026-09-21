@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library · VAWnet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="library">
+
+<div class="safety-bar">
+  <span class="safety-bar__title">Your safety matters.</span>
+  <span class="safety-bar__note">Press <b>ESC</b> twice, or use the button, to leave this site immediately.</span>
+  <span class="safety-bar__spacer"></span>
+  <a class="safety-bar__btn" href="https://weather.com" data-leave-site>Leave this site <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></a>
+</div>
+<div class="safety-offset"></div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="https://vawnet.org/themes/custom/vawnet/logo.svg" alt="VAWnet">
+      <span class="brand__tag">Resource<br>library</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <button class="main-nav__link" type="button" data-menu-toggle="topics" aria-expanded="false" aria-controls="menu-topics">Content Topics &#9662;</button>
+      <button class="main-nav__link" type="button" data-menu-toggle="types" aria-expanded="false" aria-controls="menu-types">Material Types &#9662;</button>
+      <a class="main-nav__link" href="news.html">News</a>
+      <a class="main-nav__link" href="news.html">Events</a>
+      <a class="main-nav__link" href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      
+      <a class="main-nav__link" href="#">Log in</a>
+      <a class="btn btn--primary" href="#">Create account</a>
+    </div>
+  </div>
+  <div class="mega" id="menu-topics" data-menu="topics">
+    <div class="container">
+      <div class="mega__grid mega__grid--topics">
+        <div class="mega__col"><a class="mega__title" href="library.html">Engagement &amp; Collaboration</a><div class="mega__count">612 materials</div><div class="mega__links"><a href="library.html">Coalition Building</a><a href="library.html">Community Organizing</a><a href="library.html">Coordinated Community Response</a><a href="library.html">Media Advocacy / Literacy</a><a href="library.html">Movement Building</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Intervention &amp; Prevention</a><div class="mega__count">1,184 materials</div><div class="mega__links"><a href="library.html">Accessibility</a><a href="library.html">Counseling &amp; Crisis Intervention</a><a href="library.html">Prevention Programming</a><a href="library.html">Residential / Shelter Services</a><a href="library.html">Trauma Informed Approach</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Management &amp; Sustainability</a><div class="mega__count">438 materials</div><div class="mega__links"><a href="library.html">Fiscal Management</a><a href="library.html">Fund Development</a><a href="library.html">Funding Opportunities</a><a href="library.html">Leadership Development</a><a href="library.html">Staff Development</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Policy &amp; Systems Advocacy</a><div class="mega__count">903 materials</div><div class="mega__links"><a href="library.html">Child Welfare</a><a href="library.html">Civil Legal Rights</a><a href="library.html">Criminal Justice</a><a href="library.html">Economic Justice</a><a href="library.html">Immigration / Resettlement</a></div></div><div class="mega__col"><a class="mega__title" href="library.html">Research &amp; Statistics</a><div class="mega__count">4,056 materials</div><div class="mega__links"><a href="library.html">Communities of Color</a><a href="library.html">Disaster</a><a href="library.html">Housing &amp; Homelessness</a><a href="library.html">Human Trafficking</a><a href="library.html">Mental Health</a></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="mega" id="menu-types" data-menu="types">
+    <div class="container">
+      <div class="mega__grid mega__grid--types">
+        <div class="mega__col"><a class="mega__title" href="library.html">Special Collections</a><p class="mega__desc">Curated sets of our most highly valued resources.</p></div><div class="mega__col"><a class="mega__title" href="library.html">NRCDV Publications</a><p class="mega__desc">Papers, briefs and guides authored in house.</p></div><div class="mega__col"><a class="mega__title" href="library.html">Training Tools</a><p class="mega__desc">Webinars, slide decks and facilitation materials.</p></div><div class="mega__col"><a class="mega__title" href="library.html">General Materials</a><p class="mega__desc">Everything else in the library, from every publisher.</p></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="searchbar-band">
+    <div class="container">
+      <form class="searchbar searchbar--compact" action="library.html" method="get">
+        <span class="searchbar__icon"><svg class="icon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span>
+        <label class="visually-hidden" for="q">Search the library</label>
+        <input class="searchbar__input" id="q" name="q" type="search" placeholder="Search by keyword, title, author or publisher">
+        <div class="scope-inline" role="group" aria-label="Search scope">
+          <button class="scope-inline__opt is-active" type="button" data-scope>All materials</button>
+          <button class="scope-inline__opt" type="button" data-scope>Special Collections</button>
+          <button class="scope-inline__opt" type="button" data-scope>Training Tools</button>
+        </div>
+        <button class="searchbar__submit" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / Library</nav>
+
+    <div class="library">
+      <aside class="facets">
+        <div class="facets__head">
+          <h2 class="facets__title">Filter results</h2>
+          <button class="link-arrow" type="button" data-clear-facets>Clear all</button>
+        </div>
+
+        <p class="rule-label">Content topics</p>
+        <div class="facet-group">
+          <button class="facet-group__toggle" type="button" data-facet-toggle aria-expanded="false">
+            <span>Engagement &amp; Collaboration</span><span class="facet-group__sign">+</span>
+          </button>
+          <div class="facet-list">
+            <label class="facet"><input type="checkbox" data-facet="Coalition Building"><span class="facet__name">Coalition Building</span><span class="facet__count">148</span></label><label class="facet"><input type="checkbox" data-facet="Community Organizing"><span class="facet__name">Community Organizing</span><span class="facet__count">212</span></label><label class="facet"><input type="checkbox" data-facet="Coordinated Community Response"><span class="facet__name">Coordinated Community Response</span><span class="facet__count">176</span></label><label class="facet"><input type="checkbox" data-facet="Movement Building"><span class="facet__name">Movement Building</span><span class="facet__count">94</span></label>
+          </div>
+        </div><div class="facet-group">
+          <button class="facet-group__toggle" type="button" data-facet-toggle aria-expanded="false">
+            <span>Intervention &amp; Prevention</span><span class="facet-group__sign">+</span>
+          </button>
+          <div class="facet-list">
+            <label class="facet"><input type="checkbox" data-facet="Accessibility"><span class="facet__name">Accessibility</span><span class="facet__count">132</span></label><label class="facet"><input type="checkbox" data-facet="Prevention Programming"><span class="facet__name">Prevention Programming</span><span class="facet__count">318</span></label><label class="facet"><input type="checkbox" data-facet="Residential / Shelter Services"><span class="facet__name">Residential / Shelter Services</span><span class="facet__count">204</span></label><label class="facet"><input type="checkbox" data-facet="Trauma Informed Approach"><span class="facet__name">Trauma Informed Approach</span><span class="facet__count">286</span></label>
+          </div>
+        </div><div class="facet-group">
+          <button class="facet-group__toggle" type="button" data-facet-toggle aria-expanded="false">
+            <span>Management &amp; Sustainability</span><span class="facet-group__sign">+</span>
+          </button>
+          <div class="facet-list">
+            <label class="facet"><input type="checkbox" data-facet="Fiscal Management"><span class="facet__name">Fiscal Management</span><span class="facet__count">64</span></label><label class="facet"><input type="checkbox" data-facet="Fund Development"><span class="facet__name">Fund Development</span><span class="facet__count">88</span></label><label class="facet"><input type="checkbox" data-facet="Leadership Development"><span class="facet__name">Leadership Development</span><span class="facet__count">102</span></label>
+          </div>
+        </div><div class="facet-group">
+          <button class="facet-group__toggle" type="button" data-facet-toggle aria-expanded="false">
+            <span>Policy &amp; Systems Advocacy</span><span class="facet-group__sign">+</span>
+          </button>
+          <div class="facet-list">
+            <label class="facet"><input type="checkbox" data-facet="Child Welfare"><span class="facet__name">Child Welfare</span><span class="facet__count">196</span></label><label class="facet"><input type="checkbox" data-facet="Criminal Justice"><span class="facet__name">Criminal Justice</span><span class="facet__count">242</span></label><label class="facet"><input type="checkbox" data-facet="Economic Justice"><span class="facet__name">Economic Justice</span><span class="facet__count">158</span></label><label class="facet"><input type="checkbox" data-facet="Immigration / Resettlement"><span class="facet__name">Immigration / Resettlement</span><span class="facet__count">121</span></label>
+          </div>
+        </div><div class="facet-group is-open">
+          <button class="facet-group__toggle" type="button" data-facet-toggle aria-expanded="true">
+            <span>Research &amp; Statistics</span><span class="facet-group__sign">&minus;</span>
+          </button>
+          <div class="facet-list">
+            <label class="facet"><input type="checkbox" data-facet="Communities of Color"><span class="facet__name">Communities of Color</span><span class="facet__count">264</span></label><label class="facet"><input type="checkbox" data-facet="Disaster"><span class="facet__name">Disaster</span><span class="facet__count">72</span></label><label class="facet"><input type="checkbox" data-facet="Housing &amp; Homelessness" checked><span class="facet__name">Housing &amp; Homelessness</span><span class="facet__count">338</span></label><label class="facet"><input type="checkbox" data-facet="Human Trafficking"><span class="facet__name">Human Trafficking</span><span class="facet__count">146</span></label><label class="facet"><input type="checkbox" data-facet="Mental Health"><span class="facet__name">Mental Health</span><span class="facet__count">228</span></label>
+          </div>
+        </div>
+
+        <p class="rule-label facets__block">Material type</p>
+        <div class="facet-list facet-list--flat">
+          <label class="facet"><input type="checkbox" data-facet="Special Collections"><span class="facet__name">Special Collections</span><span class="facet__count">78</span></label><label class="facet"><input type="checkbox" data-facet="NRCDV Publications"><span class="facet__name">NRCDV Publications</span><span class="facet__count">214</span></label><label class="facet"><input type="checkbox" data-facet="Training Tools"><span class="facet__name">Training Tools</span><span class="facet__count">331</span></label><label class="facet"><input type="checkbox" data-facet="General Material"><span class="facet__name">General Material</span><span class="facet__count">3,444</span></label>
+        </div>
+
+        <p class="rule-label facets__block">Author</p>
+        <label class="visually-hidden" for="facet-author">Author</label>
+        <input class="input" id="facet-author" type="text" placeholder="Type an author's name">
+
+        <p class="rule-label facets__block">Publisher</p>
+        <label class="visually-hidden" for="facet-publisher">Publisher</label>
+        <input class="input" id="facet-publisher" type="text" placeholder="Type a publisher">
+      </aside>
+
+      <section class="results">
+        <h1 class="results__title">All materials</h1>
+        <p class="lead gap-below-md">Results are grouped with Special Collections first, then individual materials. Refine by topic, type, author or publisher.</p>
+
+        <div class="chips" data-chips></div>
+
+        <div class="toolbar">
+          <p class="toolbar__count"><strong data-result-count>4,067</strong> results</p>
+          <div class="sort">
+            <span class="sort__label">Sort</span>
+            <button class="sort__btn is-active" type="button" data-sort>Relevance</button>
+            <button class="sort__btn" type="button" data-sort>Date published</button>
+            <button class="sort__btn" type="button" data-sort>A&ndash;Z</button>
+          </div>
+        </div>
+
+        <article class="result">
+          <div>
+            <div class="result__head">
+              <span class="tag tag--brand">Special Collection</span>
+              <span class="eyebrow">September 2025</span>
+            </div>
+            <a class="result__title" href="material.html">Disaster and Emergency Preparedness and Response</a>
+            <p class="result__authors">Author(s): Patty Branco</p>
+            <p class="result__excerpt">Selected materials &mdash; many gender-informed &mdash; that domestic and sexual violence organizations can use to increase preparedness for and response to major disasters and emergencies.</p>
+          </div>
+          <div class="result__actions">
+            <a class="btn btn--secondary" href="material.html">View</a>
+            <button class="save-btn" type="button" data-save><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg><span>Save</span></button>
+          </div>
+        </article><article class="result">
+          <div>
+            <div class="result__head">
+              <span class="tag tag--brand">Special Collection</span>
+              <span class="eyebrow">January 2025</span>
+            </div>
+            <a class="result__title" href="material.html">Earned Income Tax Credit (EITC) and Other Tax Credits</a>
+            <p class="result__authors">Author(s): Shaina Goodman, Marium Durrani, Casey Keene</p>
+            <p class="result__excerpt">Key resources for the EITC, the Child Tax Credit and Health Coverage Tax Credits, highlighting materials specific to survivors and the advocates working with them.</p>
+          </div>
+          <div class="result__actions">
+            <a class="btn btn--secondary" href="material.html">View</a>
+            <button class="save-btn" type="button" data-save><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg><span>Save</span></button>
+          </div>
+        </article><article class="result">
+          <div>
+            <div class="result__head">
+              <span class="tag tag--neutral">NRCDV Publication</span>
+              <span class="eyebrow">November 2024</span>
+            </div>
+            <a class="result__title" href="material.html">Trauma-Informed Environments for Young People</a>
+            <p class="result__authors">Author(s): Kara Cook, Casey Keene</p>
+            <p class="result__excerpt">How to build and sustain trauma-informed, asset-based environments for children and youth, with an emphasis on the social determinants of health.</p>
+          </div>
+          <div class="result__actions">
+            <a class="btn btn--secondary" href="material.html">View</a>
+            <button class="save-btn" type="button" data-save><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg><span>Save</span></button>
+          </div>
+        </article><article class="result">
+          <div>
+            <div class="result__head">
+              <span class="tag tag--neutral">Training Tool</span>
+              <span class="eyebrow">August 2024</span>
+            </div>
+            <a class="result__title" href="material.html">Webinar &mdash; Back to Basics: Domestic Violence and Foster Care</a>
+            <p class="result__authors">Author(s): NRCDV Training Institute</p>
+            <p class="result__excerpt">Recording, slides and related materials from the training on the intersection of domestic violence and the foster care system.</p>
+          </div>
+          <div class="result__actions">
+            <a class="btn btn--secondary" href="material.html">View</a>
+            <button class="save-btn" type="button" data-save><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg><span>Save</span></button>
+          </div>
+        </article><article class="result">
+          <div>
+            <div class="result__head">
+              <span class="tag tag--neutral">General Material</span>
+              <span class="eyebrow">June 2023</span>
+            </div>
+            <a class="result__title" href="material.html">Faith, Spirituality, Religion &amp; Domestic Violence</a>
+            <p class="result__authors">Author(s): Patty Branco</p>
+            <p class="result__excerpt">How faith leaders from many different spiritual communities can become effective allies in the prevention of and intervention in domestic violence.</p>
+          </div>
+          <div class="result__actions">
+            <a class="btn btn--secondary" href="material.html">View</a>
+            <button class="save-btn" type="button" data-save><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg><span>Save</span></button>
+          </div>
+        </article><article class="result">
+          <div>
+            <div class="result__head">
+              <span class="tag tag--neutral">General Material</span>
+              <span class="eyebrow">October 2021</span>
+            </div>
+            <a class="result__title" href="material.html">Centering the Needs of Male-Identified Survivors of Domestic Violence</a>
+            <p class="result__authors">Author(s): Ivonne Ortiz</p>
+            <p class="result__excerpt">Research, practice guidance and survivor voice on serving male-identified survivors within existing programs and systems.</p>
+          </div>
+          <div class="result__actions">
+            <a class="btn btn--secondary" href="material.html">View</a>
+            <button class="save-btn" type="button" data-save><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg><span>Save</span></button>
+          </div>
+        </article>
+
+        <nav class="pagination" aria-label="Pagination">
+          <a class="page-btn page-btn--current" href="#" aria-current="page">1</a>
+          <a class="page-btn" href="#">2</a>
+          <a class="page-btn" href="#">3</a>
+          <span class="pagination__gap">&hellip;</span>
+          <a class="page-btn page-btn--wide" href="#">Next &rarr;</a>
+        </nav>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div>
+      <img class="footer__logo" src="https://vawnet.org/sites/default/files/assets/images/full%20logo_color.png" alt="National Resource Center on Domestic Violence">
+      <p class="footer__about">A project of the National Resource Center on Domestic Violence. 632 N. 2nd Street, Unit #589, Philadelphia, PA 19123-3001. Phone 717-461-3939.</p>
+    </div>
+    <div>
+      <div class="footer__title">Library</div>
+      <div class="footer__links"><a href="library.html">Content Topics</a><a href="library.html">Special Collections</a><a href="library.html">NRCDV Publications</a><a href="library.html">Training Tools</a></div>
+    </div>
+    <div>
+      <div class="footer__title">Organization</div>
+      <div class="footer__links"><a href="news.html">News</a><a href="news.html">Events</a><a href="about.html">About VAWnet</a><a href="about.html">Contact</a></div>
+    </div>
+    <div>
+      <div class="footer__title">Newsletter</div>
+      <p class="footer__note">Training announcements and new resources.</p>
+      <form class="subscribe-form" action="#" method="post">
+        <label class="visually-hidden" for="footer-email">Email address</label>
+        <input class="input" id="footer-email" type="email" placeholder="Email address">
+        <button class="btn btn--primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <div class="container footer__legal-inner">
+      <span>&copy; 2026 National Resource Center on Domestic Violence.</span>
+      <span class="spacer"></span>
+      <a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a><a href="#">Funding Disclaimer</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
